@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    # Establece la ruta de destino del despliegue.
+    - export DEPLOYPATH=/home/compraxc/public_html/index/
+    
+    # Copia el archivo index.html desde el repositorio a la ruta de destino.
+    - /bin/cp /home/compraxc/repositories/app/index.html $DEPLOYPATH
